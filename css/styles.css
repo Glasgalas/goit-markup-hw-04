@@ -132,8 +132,7 @@ nav, .site-nav, .contacts-nav {
   align-items: center;
 }
 
-.link:hover .contacts-icon, 
-.link:focus .contacts-icon {
+.link:hover .contacts-icon {
   fill: var(--accent-color);
 }
 
@@ -357,8 +356,7 @@ nav, .site-nav, .contacts-nav {
   fill: #AFB1B8;
 }
 
-.social-link:hover .social-icon, 
-.social-link:focus .social-icon {
+.social-link:hover .social-icon {
   fill: var(--bg-color);
 }
 
@@ -423,8 +421,7 @@ nav, .site-nav, .contacts-nav {
   fill: #AFB1B8;
 }
 
-.customers-link:hover .customers-icon,
-.customers-link:focus .customers-icon {
+.customers-link:hover .customers-icon {
   fill: var(--accent-color);
 }
 
