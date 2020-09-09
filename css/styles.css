@@ -5,6 +5,7 @@
 цвет фона/bg-color  #FFFFFF 
 вторичный цвет фона/bg-foot-color  #2F303A 
 дополнительный цвет фона/team-color #F5F4FA
+вспомогательный цвет иконок/icon-color #AFB1B8
 */
 
 html {
@@ -32,6 +33,7 @@ html {
   --bg-color: #FFFFFF;
   --bg-foot-color: #2F303A; 
   --team-color: #F5F4FA;  
+  --icon-color: #AFB1B8;
 }   
 
 .page {
@@ -143,7 +145,7 @@ nav, .site-nav, .contacts-nav {
 
 .contacts-icon {
   margin-right: 10px;
-  fill: var(--main-color);
+  fill: currentColor;
 }
 
 .icon-mail {
@@ -329,7 +331,6 @@ nav, .site-nav, .contacts-nav {
 
 .social-links {
   display: flex;
-  padding: 0 32px;
 }
 
 .social-link {
@@ -353,7 +354,7 @@ nav, .site-nav, .contacts-nav {
 .social-icon {
   width: 20px;
   height: 20px;
-  fill: #AFB1B8;
+  fill: var(--icon-color);
 }
 
 .social-link:hover .social-icon {
@@ -377,8 +378,7 @@ nav, .site-nav, .contacts-nav {
 }
 
 .team-item {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px 32px;
 }
 
 /* Постоянные клиенты */
@@ -409,7 +409,7 @@ nav, .site-nav, .contacts-nav {
   height: 90px;
   justify-content: center;
   align-items: center;
-  border: 1px solid #AFB1B8;
+  border: 1px solid var(--icon-color);
   border-radius: 4px;
 }  
 
@@ -418,7 +418,7 @@ nav, .site-nav, .contacts-nav {
 }
 
 .customers-icon {
-  fill: #AFB1B8;
+  fill: var(--icon-color);
 }
 
 .customers-link:hover .customers-icon {
@@ -443,9 +443,12 @@ nav, .site-nav, .contacts-nav {
   align-items: baseline
 }
 
+.address {
+  margin-right: 70px;
+}
+
 .footer address {
   margin-top: 20px;
-  margin-right: 70px;
   font-style: normal;
   font-size: 14px;
   line-height: 1.7;
